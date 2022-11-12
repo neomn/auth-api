@@ -4,9 +4,9 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "repositories": {
-        "laraauthapi": {
+        "laravelAuthApi": {
             "type": "path",
-            "url": "packages/neomn/laraauthapi",
+            "url": "packages/neomn/laravel_auth_api",
             "options": {
                 "symlink": true
             }
@@ -20,7 +20,7 @@
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "neomn/laraauthapi": "@dev"
+        "neomn/laravel_auth_api": "@dev"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

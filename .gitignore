@@ -13,3 +13,5 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+/packages/neomn/laravel_auth_api/.git
+/packages/neomn/laravel_auth_api/.gitignore

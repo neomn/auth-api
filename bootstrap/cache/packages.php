@@ -38,11 +38,11 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
-  'neomn/laraauthapi' => 
+  'neomn/laravel_auth_api' => 
   array (
     'providers' => 
     array (
-      0 => 'neomn\\laraauthapi\\LaraAuthApiServiceProvider',
+      0 => 'neomn\\laravel_auth_api\\LaraAuthApiServiceProvider',
     ),
   ),
   'nesbot/carbon' => 
