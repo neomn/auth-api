@@ -1913,7 +1913,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/neomn/laravel_auth_api",
-                "reference": "13a5b297966029ce137981a7f53c5301020493b7"
+                "reference": "544bed22f73e4070bc27114cc697dc0752bb492c"
             },
             "require": {
                 "tymon/jwt-auth": "@stable"
@@ -1940,6 +1940,14 @@
                 "psr-4": {
                     "neomn\\laravel_auth_api\\tests\\": "tests/"
                 }
+            },
+            "scripts": {
+                "post-package-update": [
+                    "php artisan vendor:publish --provider Tymon\\JWTAuth\\Providers\\LaravelServiceProvider"
+                ],
+                "post-package-install": [
+                    "php artisan vendor:publish --provider Tymon\\JWTAuth\\Providers\\LaravelServiceProvider"
+                ]
             },
             "license": [
                 "MIT"
