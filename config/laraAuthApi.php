@@ -5,13 +5,13 @@ return [
 // set registration method to true/false to set them enable/disable
     'registrationMethods' => [
         'phone_number' => true,
-        'email' => true,
-        'username' => true,
-        'social_media' => true,
+        'email' => false,
+        'user_name' => true,
+        'social_media' => false,
     ],
 
     'loginMethods' => [
-        'username' => true,
+        'user_name' => true,
         'email' => true,
         'phone_number' => true,
         'social_media' => true,
