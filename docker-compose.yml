@@ -5,6 +5,8 @@ networks:
 
 services:
     nginx:
+        image: nginx:stable-alpine
+        container_name: nginx
         depends_on:
             - php
             - mysql
