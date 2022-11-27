@@ -4,4 +4,14 @@ networks:
     -laravel:
 
 services:
-    -
+    nginx:
+        networks:
+            -laravel:
+                -
+    mysql:
+        networks:
+            -laravel:
+                -
+    php:
+        networks:
+            -laravel:
