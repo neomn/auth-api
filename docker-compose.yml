@@ -1,17 +1,20 @@
 version: '3'
 
 networks:
-    -laravel:
+     laravel:
 
 services:
     nginx:
+        depends_on:
+            - php
+            - mysql
         networks:
-            -laravel:
-                -
+            - laravel:
+
     mysql:
         networks:
-            -laravel:
-                -
+            - laravel:
+
     php:
         networks:
-            -laravel:
+            - laravel:
