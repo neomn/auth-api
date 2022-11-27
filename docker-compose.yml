@@ -18,6 +18,15 @@ services:
             - laravel:
 
     mysql:
+        image: mysql:latest
+        container_name: mysql
+        restart: unless-stopped
+        tty: true
+        ports:
+            -   "4306:3306"
+        volumes:
+            - ./mysql:/var/lib/mysql
+        environment:
         networks:
             - laravel:
 
