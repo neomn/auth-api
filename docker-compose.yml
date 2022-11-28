@@ -1,7 +1,7 @@
 version: '3'
 
 networks:
-     laravel:
+    laravel:
 
 services:
     nginx:
@@ -15,7 +15,7 @@ services:
             - php
             - mysql
         networks:
-            - laravel:
+            - laravel
 
     mysql:
         image: mysql:latest
@@ -34,8 +34,8 @@ services:
             SERVICE_TAG: dev
             SERVICE_NAME: mysql
         networks:
-            - laravel:
+            - laravel
 
     php:
         networks:
-            - laravel:
+            - laravel
